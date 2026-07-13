@@ -1,0 +1,10 @@
+## 1. The Client-Server Architecture
+
+
+Web applications rely on a **Client-Server Model**.
+Communication is always a two-way street initiated by the client.
+
+* **The Client:** The front-end interface (e.g., a web browser, a mobile app, or a testing tool like Postman) that requests information.
+* **The Server:** A remote computer that processes the request, communicates with a database if necessary, and sends data back.
+
+
