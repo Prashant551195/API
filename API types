@@ -1,0 +1,197 @@
+##Types of APIs
+_____________________________________________
+
+4 Types of APIs:
+
+### Public API
+- Open for anyone to use.
+
+### Private API
+- Used within an organization only.
+
+### Partner API
+- Shared with trusted partners.
+
+### Composite API
+- Combines multiple APIs to create a new service.
+
+### Key Points
+- Public → Open to all
+- Private → Internal use
+- Partner → For trusted partners
+- Composite → Combines multiple APIs
+
+---
+
+## 3. What is REST API?
+
+**Answer:**
+REST (Representational State Transfer) is an architectural style that uses standard HTTP methods to perform CRUD operations on resources. It is stateless, lightweight, and scalable.
+
+### Key Points
+- Uses HTTP methods (GET, POST, PUT, DELETE)
+- Stateless
+- Returns JSON or XML
+- Lightweight and scalable
+
+---
+
+## 4. What is SOAP API?
+
+**Answer:**
+SOAP (Simple Object Access Protocol) is a protocol for exchanging structured information using XML. It commonly works over HTTP or SMTP.
+
+### Key Points
+- Uses XML
+- Protocol-based
+- Built-in security
+- More rigid and heavyweight than REST
+
+---
+
+## 5. REST vs SOAP
+
+| REST | SOAP |
+|------|------|
+| Architectural style | Protocol |
+| Uses HTTP methods | Uses HTTP, SMTP, etc. |
+| JSON/XML | XML only |
+| Stateless | Stateful |
+| Lightweight & Fast | Heavyweight & Slower |
+| Easy to use & Scalable | Secure but Complex |
+
+### Summary
+- REST is lightweight, stateless, and easy to use.
+- SOAP is protocol-based, secure, but more complex.
+
+---
+
+# HTTP Methods
+
+## 1. GET
+
+**Answer:**
+GET is used to retrieve data from the server. It does not modify resources.
+
+### Example
+GET /users/123
+
+### Key Points
+- Read-only
+- Safe
+- Idempotent
+- Parameters sent in URL
+- Can be cached
+
+---
+
+## 2. POST
+
+**Answer:**
+POST is used to send data to the server to create a new resource.
+
+### Example
+
+POST /users
+
+Request Body:
+{
+  "name": "John",
+  "email": "john@example.com"
+}
+
+### Key Points
+- Creates new resource
+- Data sent in request body
+- Not safe
+- Not idempotent
+
+---
+
+## 3. PUT
+
+**Answer:**
+PUT is used to update or replace an entire resource. If the resource does not exist, it may be created.
+
+### Example
+
+PUT /users/123
+
+Request Body:
+{
+  "name": "John",
+  "email": "john@example.com"
+}
+
+### Key Points
+- Replaces entire resource
+- Idempotent
+- Data in request body
+- Can create if not exists
+
+---
+
+## 4. PATCH
+
+**Answer:**
+PATCH is used to partially update an existing resource.
+
+### Example
+
+PATCH /users/123
+
+Request Body:
+{
+  "email": "john.doe@example.com"
+}
+
+### Key Points
+- Partial update
+- Usually idempotent
+- More efficient than PUT
+- Data in request body
+
+---
+
+## 5. DELETE
+
+**Answer:**
+DELETE is used to remove a resource from the server.
+
+### Example
+
+DELETE /users/123
+
+### Key Points
+- Removes resource
+- Idempotent
+- Usually no request body
+- Cannot be undone
+
+---
+
+# Quick Revision
+
+### CRUD Operations
+
+| Operation | HTTP Method |
+|-----------|-------------|
+| Create | POST |
+| Read | GET |
+| Update (Full) | PUT |
+| Update (Partial) | PATCH |
+| Delete | DELETE |
+
+---
+
+## PUT vs PATCH
+
+PUT
+- Replaces the entire resource.
+
+PATCH
+- Updates only specific fields.
+
+**Easy Trick:**
+- PUT = Replace Whole Resource
+- PATCH = Update Part of Resource
