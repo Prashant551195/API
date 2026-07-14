@@ -26,7 +26,8 @@ _____________________________________________
 ## 3. What is REST API?
 
 **Answer:**
-REST (Representational State Transfer) is an architectural style that uses standard HTTP methods to perform CRUD operations on resources. It is stateless, lightweight, and scalable.
+REST (Representational State Transfer) is an architectural style that uses standard HTTP methods to perform CRUD operations on resources. 
+It is stateless, lightweight, and scalable.
 
 ### Key Points
 - Uses HTTP methods (GET, POST, PUT, DELETE)
@@ -39,7 +40,8 @@ REST (Representational State Transfer) is an architectural style that uses stand
 ## 4. What is SOAP API?
 
 **Answer:**
-SOAP (Simple Object Access Protocol) is a protocol for exchanging structured information using XML. It commonly works over HTTP or SMTP.
+SOAP (Simple Object Access Protocol) is a protocol for exchanging structured information using XML.
+It commonly works over HTTP or SMTP.
 
 ### Key Points
 - Uses XML
@@ -71,7 +73,8 @@ SOAP (Simple Object Access Protocol) is a protocol for exchanging structured inf
 ## 1. GET
 
 **Answer:**
-GET is used to retrieve data from the server. It does not modify resources.
+GET is used to retrieve data from the server. 
+It does not modify resources.
 
 ### Example
 GET /users/123
@@ -111,7 +114,8 @@ Request Body:
 ## 3. PUT
 
 **Answer:**
-PUT is used to update or replace an entire resource. If the resource does not exist, it may be created.
+PUT is used to update or replace an entire resource. 
+If the resource does not exist, it may be created.
 
 ### Example
 
