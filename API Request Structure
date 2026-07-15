@@ -1,0 +1,35 @@
+API Request Structure
+
+*​Every API request is made up of several key parts working together.
+​
+The Basic Flow
+​1. REQUEST (Client ➔ Server): 
+Consists of Endpoint + Headers + Params + Body
+
+​2. RESPONSE (Server ➔ Client): 
+Consists of Status Code + Headers + Body
+
+​1. ENDPOINT (URL)
+​Definition: The URL that identifies the resource. It is composed of the Base URL + path.
+​Example: [https://api.example.com/users/101](https://api.example.com/users/101)
+​Base URL: [https://api.example.com](https://api.example.com)
+​Path: /users/101
+
+​2. HEADERS
+​Definition: Key-value pairs that send extra information.
+​Common Headers: Authorization, Accept, Content-Type.
+​Example:
+​Authorization: Bearer token123
+​Accept: application/json
+​Content-Type: application/json
+
+​3. PATH PARAMETERS
+​Definition: Values included in the URL path to identify a resource. Usually represents a unique ID.
+​Example: [https://api.example.com/users/101](https://api.example.com/users/101)
+​Path Parameter: 101
+
+​4. QUERY PARAMETERS
+​Definition: Key-value pairs added at the end of the URL. Used for filtering, sorting, and pagination.
+​Example: [https://api.example.com/users?page=1&limit=10](https://api.example.com/users?page=1&limit=10)
+​Query Parameters: ?page=1&limit=10
+
