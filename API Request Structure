@@ -33,3 +33,18 @@ Consists of Status Code + Headers + Body
 ​Example: [https://api.example.com/users?page=1&limit=10](https://api.example.com/users?page=1&limit=10)
 ​Query Parameters: ?page=1&limit=10
 
+5. REQUEST BODY
+Definition: Data sent to the server. 
+Used in POST, PUT, and PATCH requests. 
+Usually in JSON or XML format.
+Example (JSON):
+{
+  "name": "John",
+  "email": "john@gmail.com",
+  "role": "QA Engineer"
+}
+
+6 CONTENT-TYPE
+Definition: Tells the server the format of the request body.
+​Common Types: application/json, application/xml, multipart/form-data.
+​Example: Content-Type: application/json
