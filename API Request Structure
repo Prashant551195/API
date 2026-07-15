@@ -1,5 +1,5 @@
 API Request Structure
-
+______________<__________________________________<_____________________
 *​Every API request is made up of several key parts working together.
 ​
 The Basic Flow
@@ -44,7 +44,18 @@ Example (JSON):
   "role": "QA Engineer"
 }
 
-6 CONTENT-TYPE
+6. CONTENT-TYPE
 Definition: Tells the server the format of the request body.
 ​Common Types: application/json, application/xml, multipart/form-data.
 ​Example: Content-Type: application/json
+
+
+Notes : imp points 
+
+1 ​Every request must have a valid endpoint.
+2 ​Headers and Content-Type are important.
+3 ​Params help to make requests dynamic.
+
+1 ​Always validate request & response.
+2 ​Use proper headers and status codes.
+3 ​Keep API requests simple and meaningful.
