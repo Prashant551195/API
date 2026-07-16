@@ -1,0 +1,87 @@
+Definition of some important terms in 
+# API Development & Testing Fundamentals
+
+>______________________<________________>
+
+## 1. What is the difference between PUT and POST?
+* **PUT** is **idempotent**, meaning multiple identical requests result in the same effect.
+  * Used to **Update / Replace** a resource.
+  * Requires a **full payload**.
+* **POST** is **not idempotent**; used to create resources.
+  * Used to **Create / Add** a resource.
+  * Can accept a **partial payload**.
+
+## 2. What is an endpoint in an API?
+* **Endpoint** is a specific URL where an API can access resources.
+* It acts as the point of contact between the API and the client.
+* **Example:** `/api/users/123` is an endpoint used to access specific user data.
+
+## 3. What is JSON and XML in APIs?
+* **JSON (JavaScript Object Notation):** Lightweight, easy to read, and commonly used.
+* **XML (eXtensible Markup Language):** Verbose, typically used in older legacy APIs.
+* Both formats are widely used to transfer data between a client and a server.
+
+## 4. What are common API Status Codes?
+| Status Code | Type | Meaning |
+| :--- | :--- | :--- |
+| **200** | OK | Success |
+| **201** | Created | New resource created successfully |
+| **400** | Bad Request | Invalid input from the client |
+| **401** | Unauthorized | Authentication is required |
+| **404** | Not Found | Resource is not available |
+| **500** | Internal Server Error | Server-side error encountered |
+
+## 5. What is API testing?
+* API testing is the process of **validating APIs** to ensure they work exactly as expected.
+* It checks the **functionality, reliability, performance, security, and responses** of the endpoints.
+* **Tools:** Postman, SoapUI, RestAssured, etc.
+
+---
+
+## 6. What is rate limiting in APIs?
+* It restricts the number of API calls a client can make within a given timeframe.
+* Prevents abuse, denial-of-service attacks, and server overloads.
+* **Example:** Limiting a user to `1000 API calls / hour`.
+
+## 7. What is CORS in APIs?
+* **CORS** stands for **Cross-Origin Resource Sharing**.
+* It is a core security feature implemented within web browsers.
+* It explicitly allows or blocks resource requests originating from different domains/origins.
+
+## 8. What is Swagger?
+* Swagger is a framework used for designing and documenting **RESTful APIs**.
+* It is now officially known as the **OpenAPI Specification**.
+* Allows for the auto-generation of interactive documentation and client SDKs.
+
+## 9. What is RESTful vs SOAP API?
+* **REST:** Lightweight, utilizes standard HTTP, and supports multiple formats like **JSON** and **XML**. 
+It is the most popular choice for web-based APIs.
+* **SOAP:** Protocol-based, relies strictly on **XML**, and operates under much more rigid architecture rules.
+
+## 10. What is an API key?
+* An API key is a **unique identifier** string used to authenticate a calling client or application.
+
+## 11. What is a mock API?
+* A simulated API that mimics the behavior and responses of a real production API.
+* Used during early development and testing phases before the actual backend service is ready.
+
+## 12. What is versioning in APIs?
+* The process of updating APIs and introducing changes without breaking existing client integrations.
+* Versions can be included directly in the URL route or via request headers.
+* **Example:** `/api/v1/users`
+
+## 13. What is latency in an API?
+* Latency is the total time taken between a request being sent by the client and the final response being received.
+* It is usually measured in milliseconds (**ms**).
+* **Lower latency** translates to faster API performance and a better overall user experience.
+
+## 14. What is an API Gateway?
+* A dedicated server that acts as the single "front-door" entry point for all incoming API requests.
+* Handles system-wide tasks such as **authentication, rate limiting, and routing**.
+* **Examples:** AWS API Gateway, Kong, Apigee.
+
+## 15. What are some common tools for API testing?
+* **Postman**
+* **SoapUI**
+* **JMeter**
+
