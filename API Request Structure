@@ -96,6 +96,20 @@ Answer:
 • A REST resource is an object or data represented by a URI.
 • Example: /users/123 represents the user with ID 123.
 • Resources can be manipulated using HTTP methods.
+9. What is HATEOAS in REST?
+Answer:
+• HATEOAS stands for Hypermedia As The Engine Of Application State.
+• REST responses include hyperlinks to related resources.
+• It improves API discoverability and navigation.
+
+10. What are Query Parameters and Path Parameters?
+Answer:
+• Path Parameters are part of the URL that identify a specific resource.
+  Example: /users/{id}
+• Query Parameters are added after '?' to filter, sort, or modify the request.
+  Example: /users?id=1
+• Path Parameters identify a resource, while Query Parameters filter or customize the response.
+
 
 Notes : imp points 
 
