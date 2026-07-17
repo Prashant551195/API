@@ -49,6 +49,53 @@ Definition: Tells the server the format of the request body.
 ​Common Types: application/json, application/xml, multipart/form-data.
 ​Example: Content-Type: application/json
 
+1. What is a Mock API?
+Answer:
+• A Mock API is a simulated API that mimics the behavior of a real API.
+• It is used during development and testing before the real backend is ready.
+
+2. What is Versioning in API?
+Answer:
+• API versioning is the process of updating APIs without breaking existing functionality.
+• Version information can be included in the URL or request headers.
+• Example: /api/v1/users
+
+3. What is Latency in API?
+Answer:
+• Latency is the time taken between sending a request and receiving a response.
+• It is usually measured in milliseconds (ms).
+• Lower latency means faster API performance and a better user experience.
+
+4. What is API Gateway?
+Answer:
+• An API Gateway is a server that acts as the front door for APIs.
+• It handles authentication, routing, rate limiting, logging, etc.
+• Examples: AWS API Gateway, Kong, Apigee.
+
+5. What are some Common Tools for API Testing?
+Answer:
+• Postman
+• SoapUI
+• JMeter
+
+6. What are Idempotent Methods in REST API?
+Answer:
+• Idempotent methods produce the same result no matter how many times they are called.
+• Examples: GET, PUT, DELETE are idempotent.
+• POST is not idempotent.
+
+7. What is the Difference Between Synchronous and Asynchronous APIs?
+Answer:
+• Synchronous API: The client waits for the server to process the request and return a response.
+• Asynchronous API: The request is processed in the background, and the response is returned later using polling, callbacks, or webhooks.
+• Sync = Blocking
+• Async = Non-blocking
+
+8. What is a REST Resource?
+Answer:
+• A REST resource is an object or data represented by a URI.
+• Example: /users/123 represents the user with ID 123.
+• Resources can be manipulated using HTTP methods.
 
 Notes : imp points 
 
